@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bqsmu0afa6rv"]
+
+[ext_resource type="Script" uid="uid://dvke7mytco4sn" path="res://rock.gd" id="1_68h2w"]
+[ext_resource type="Texture2D" uid="uid://clvfs4lr800pq" path="res://assets/rock.png" id="2_wecdg"]
+
+[node name="Rock" type="RigidBody2D" unique_id=768095408]
+script = ExtResource("1_68h2w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2045719025]
+texture = ExtResource("2_wecdg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1815423021]
