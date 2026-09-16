@@ -2,11 +2,15 @@
 
 [ext_resource type="Script" uid="uid://dvke7mytco4sn" path="res://rock.gd" id="1_68h2w"]
 [ext_resource type="Texture2D" uid="uid://clvfs4lr800pq" path="res://assets/rock.png" id="2_wecdg"]
+[ext_resource type="PackedScene" uid="uid://djabmbtpxqh5v" path="res://explosion.tscn" id="3_wecdg"]
 
-[node name="Rock" type="RigidBody2D" unique_id=768095408]
+[node name="Rock" type="RigidBody2D" unique_id=768095408 groups=["rocks"]]
 script = ExtResource("1_68h2w")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2045719025]
 texture = ExtResource("2_wecdg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1815423021]
+
+[node name="Explosion" parent="." unique_id=1271794929 instance=ExtResource("3_wecdg")]
+visible = false

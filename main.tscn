@@ -1,11 +1,9 @@
 [gd_scene format=3 uid="uid://dacwpsnnrwgv8"]
 
+[ext_resource type="Script" uid="uid://c8yrdsd100ilt" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://diq7bt765lfxn" path="res://assets/space_background.png" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bjxqj08mykhut" path="res://player.tscn" id="2_0xm2m"]
-
-[sub_resource type="GDScript" id="GDScript_0xm2m"]
-script/source = "extends Node
-"
+[ext_resource type="PackedScene" uid="uid://bqsmu0afa6rv" path="res://rock.tscn" id="2_lquwl"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
 _data = {
@@ -14,7 +12,8 @@ _data = {
 point_count = 5
 
 [node name="Main" type="Node" unique_id=1109951115]
-script = SubResource("GDScript_0xm2m")
+script = ExtResource("1_1bvp3")
+rock_scene = ExtResource("2_lquwl")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1249412161]
 anchors_preset = 15
